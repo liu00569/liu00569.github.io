@@ -1,0 +1,2 @@
+my_photo: taken by me, using Macbook.
+sky photo: taken by me, using Canon.
