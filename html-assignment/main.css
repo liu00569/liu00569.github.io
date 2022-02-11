@@ -1,0 +1,38 @@
+body{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+header, footer{
+    background-color: #cfe1ef;
+}
+
+.site-title{
+    color: #1f5b2c;
+}
+
+#my-image{
+    box-shadow: 0px 0px 2px 1px #000000;
+}
+
+section ul{
+    list-style-type: square;
+}
+
+li:nth-child(odd){
+    background-color: #f9e1ef;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    background-color:seagreen;
+    border-style: dashed;
+}
+
+a:hover{
+    background-color: slateblue;
+}
