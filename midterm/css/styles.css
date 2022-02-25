@@ -3,51 +3,108 @@ body{
     background-image: url("../images/lone-starfish-wide.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
-   
-    
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Make the wrapper part has the same width as the image in the top. */
 .wrapper{
-    max-width:1000px;
+    max-width:1004px;
     margin: 0 auto;
+}
+
+/* Add the lighter blue in the div part. */
+/* Add 10px space in both left and right sides. */
+div{
+    background-color: #d8e9e7;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 header h1{
     color:#fff;
     font-size: 4rem;
     font-weight: lighter;
-    padding: 155px 0;
     text-align: center;
-}
-
-nav ul{
-    padding-left: 0;
+    margin-top: 200px;
+    margin-bottom: 68px;
 }
 
 nav ul li{
+    margin-left: 110px;
     display: inline-block;
     width: auto;
     list-style-type: none;
+    
+    margin-top: 5px;
+    font-size: 1.5em;
+
 }
 
 a:link, a:visited, a:hover, a:active{
     text-decoration: none;
+    color: black;
 }
 
-nav ul li ::after{
+/* Add "|" after 1th and 2th child, not 3th child */
+nav ul li:nth-child(1) ::after{
     content: "|";
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 110px;
 }
 
+nav ul li:nth-child(2) ::after{
+    content: "|";
+    margin-left: 110px;
+}
+
+nav ul li:nth-child(3){
+    margin-left: 110px;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+/* Make sure image is on the left and surrounded by texts. */
 .float img{
     width: 210px;
     float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.box{
+    width: 100%;
+    height: 360px;
+    border-style: solid;
+    border-width: 1px;
+    padding-top: 25px;
+}
+
+/* Make each input fit in one line. */
+#name, #email, #message{
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.question{
+    font-size: 20px;
+}
+
+.button{
+    background-color: #d8e9e7;
+    border: 1px solid black;
+    height: 40px;
+    margin-top: 20px;
+
 }
 
 footer{
-    text-align: right;
+    margin-top: 40px;
+    margin-left: 850px;
+    margin-bottom: 25px;
+    padding-bottom: 40px;
 }

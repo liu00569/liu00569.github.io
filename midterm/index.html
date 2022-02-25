@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header><h1>Lone Starfish</h1></header>
     <div class="wrapper">
-        <header><h1>Lone Starfish</h1></header>
-
-       <section class="list">
+       <section>
            <nav>
                <ul>
                    <li><a href="#">HOME</a></li>
@@ -41,8 +40,9 @@
            </ul>
        </section>
 
-       <section>
-           <h2>Contact to learn more</h2>
+       <h2>Contact to learn more</h2>
+<section class="box">
+
            <form action="#" method="get">
       <div>
            <label for="name">Your Name</label>
@@ -56,22 +56,24 @@
            <label for="message">Your Message</label>
            <input type="text" id="message" name="message">
        </div>
-       <div>
-           <p>Would you like to visit the starfish?</p>
+    
+           <div class="choice">
+           <p class="question">Would you like to visit the starfish?</p>
            <label for="yes">Yes</label>
            <input type="radio" name="visit" id="yes" value="yes">
 
            <label for="no">No</label>
            <input type="radio" name="visit" id="no" value="no">
 
-           <label for="maybe">maybe</label>
+           <label for="maybe">Maybe</label>
            <input type="radio" name="visit" id="maybe" value="maybe">
        </div>
+
        <div>
-        <button type="submit">SEND</button>
+        <button class="button" type="submit">SEND</button>
        </div> 
-           </form>
-    </section>
+           </form>      
+</section>
 
     <footer>
         © Lone Starfish.
