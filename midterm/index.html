@@ -11,15 +11,14 @@
     <header><h1>Lone Starfish</h1></header>
     <div class="wrapper">
        <section>
-           <nav>
-               <ul>
-                   <li><a href="#">HOME</a></li>
-                   <li><a href="#">STORY</a></li>
-                   <li><a href="#">CONTACT</a></li>
-               </ul>
-           </nav>
+           <div>
+           <div class="boxes">HOME</div>
+           <div class="boxes" id="story">STORY</div>
+           <div class="boxes">CONTACT</div>
+           </div>
        </section>
-       <section class="float">
+       <div class="bigbox">
+       <section class="float clearfix">
            <article>
                <h2>Life of a Starfish</h2>
                <img src="images/lone-starfish.jpg" alt="Starfish">
@@ -39,7 +38,6 @@
        </section>
        <h2>Contact to learn more</h2>
 <section class="box">
-
            <form action="#" method="get">
       <div>
            <label for="name">Your Name</label>
@@ -65,12 +63,12 @@
            <label for="maybe">Maybe</label>
            <input type="radio" name="visit" id="maybe" value="maybe">
        </div>
-
        <div>
         <button class="button" type="submit">SEND</button>
        </div> 
-           </form>      
-</section>
+           </form>
+        </section>    
+</div>
     <footer>
         © Lone Starfish.
     </footer>

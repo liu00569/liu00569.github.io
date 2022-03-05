@@ -10,16 +10,13 @@ body{
 
 /* Make the wrapper part has the same width as the image in the top. */
 .wrapper{
-    max-width:1004px;
+    max-width:1024px;
     margin: 0 auto;
 }
 
 /* Add the lighter blue in the div part. */
-/* Add 10px space in both left and right sides. */
 div{
     background-color: #d8e9e7;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 header h1{
@@ -31,33 +28,33 @@ header h1{
     margin-bottom: 68px;
 }
 
-nav ul li{
-    margin-left: 110px;
-    display: inline-block;
-    width: auto;
-    list-style-type: none;
+/* Divide the colume into three equal parts and make it float from left to right*/
+.boxes{
+    width: 33%;
+    height: 35px;
+    float: left;
+    text-align: center;
+    font-size: 1.5rem;
     margin-top: 5px;
-    font-size: 1.5em;
-} 
-
-a:link, a:visited, a:hover, a:active{
-    text-decoration: none;
-    color: black;
 }
 
-/* Add "|" after 1th and 2th child, not 3th child */
-nav ul li:nth-child(1) ::after{
-    content: "|";
-    margin-left: 110px;
+/* Add two vertical bars on the left and right side. */
+#story{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
 }
 
-nav ul li:nth-child(2) ::after{
-    content: "|";
-    margin-left: 110px;
+.clearfix::after{
+    content: none;
+    display: block;
+    clear: both;
 }
 
-nav ul li:nth-child(3){
-    margin-left: 110px;
+/* This invasible box is used to create padding. */
+.bigbox{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 45px;
 }
 
 h2{
@@ -73,12 +70,24 @@ h2{
     margin-bottom: 15px;
 }
 
+/* Delete the default list style and add style again to make the list closer to the left. */
+section ul{
+    list-style-type: none;
+    list-style: disc;
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+   
+}
+
 .box{
-    width: 100%;
+    width: 97%;
     height: 420px;
     border-style: solid;
     border-width: 1px;
     padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Make each input fit in one line. */
@@ -86,6 +95,7 @@ h2{
     width: 99.5%;
     margin: 10px 0;
     padding: 5px 0;
+    border: 1px solid rgb(182, 176, 176);
 }
 
 #message{
@@ -104,6 +114,7 @@ h2{
 
 }
 
+/* Create space around footer. */
 footer{
     margin-top: 40px;
     margin-left: 850px;
