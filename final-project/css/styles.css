@@ -31,16 +31,53 @@ p{
     color: white;
 }
 
-/* heading changes */
-.heading{
+.bigbox{
+    background-color: white;
+    padding-bottom: 15px;
+}
+
+/* heading part, nav bar */
+
+/* .heading{
     display: grid;
     padding: 3rem 8rem;
     grid-template-columns: repeat(8, 1fr);
+} */
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-nav ul{
-    list-style-type: none;
-    padding-left: 0;
+li{
+    display: inline;
+    float: left;
+}
+
+li a{
+    display: block;
+    padding: 20px 40px;
+    text-decoration: none;
+    text-align: center;
+    color: #be8e31;
+}
+
+li a:hover{
+    color: #222222;
+    background-color: #be8e31;
+}
+
+/* search bar */
+.searchbar{
+    float: right;
+    padding: 20px 20px;
+}
+
+li i{
+    color: #be8e31;
+    border: 1px solid #be8e31;
 }
 
 /* welcome part */
@@ -82,6 +119,7 @@ nav ul{
     font-size: 1.5rem;
 }
 
+/* aboutus part */
 .aboutus{
     background-color: #ecd9a8;
     height: 310px;
@@ -101,9 +139,6 @@ nav ul{
 
 .aboutus p{
     padding-right: 200px;
-}
-.bigbox{
-    background-color: white;
 }
 
 .ourservices{
@@ -174,6 +209,15 @@ nav ul{
     width: 250px;
 }
 
+.text1, .text2{
+    background-color: #ecd9a8;
+    padding: 30px 15px;
+}
+
+hr{
+    border: 1px solid #be8e31;
+}
+
 table{
     width: 80%;
     margin: 15px 100px;
@@ -188,6 +232,10 @@ table, td, th{
 th{
     text-align: center;
     background-color: #ecd9a8;
+}
+
+td{
+    padding-left: 15px;
 }
 
 footer p{
