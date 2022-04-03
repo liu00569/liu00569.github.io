@@ -70,11 +70,6 @@ li a:hover{
 }
 
 /* search bar */
-.searchbar{
-    float: right;
-    padding: 20px 20px;
-}
-
 li i{
     color: #be8e31;
     border: 1px solid #be8e31;
