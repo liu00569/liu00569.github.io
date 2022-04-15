@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+    max-width: 1200px;
 	line-height: 1;
     font-family: 'Open Sans', sans-serif;
 }
@@ -73,6 +74,11 @@ p{
     line-height: 1.3; 
 }
 
+.wrapper{
+    background-color: #222;
+    padding-top: 15px;
+}
+
 .button p{
     color: white;
 }
@@ -98,14 +104,47 @@ p i{
 }
 
 /* heading part */
-.heading{
-    background-color: #222;
-    background-image: url(../images/logo.png);
-    background-repeat: no-repeat;
+.stage{
+    width: 95%;
+    height: 150px;
+    margin-left: 15px;
+    margin-bottom: 0;
+    padding-top: 15px;
+    background-color: #c78c06;
+}
+
+.logo{
+    width: 100px;
 }
 
 ul{
     overflow: hidden;
+}
+
+li a{
+    display: block;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #c78c06;
+}
+
+ul input{
+    width: 85%;
+    margin-left: 15px;
+}
+
+ul i{
+    border: 1px solid #c78c06;
+    color: #c78c06;
+    font-size: 2rem;
+}
+
+.home{
+    background-color: #c78c06;
+    color: #222;
+    width: 95%;
+    margin-left: 15px;
 }
 
 /* welcome part */
@@ -157,7 +196,7 @@ ul{
 
 .aboutus img{
     width: 95%;
-    margin: 15px;
+    padding-left: 15px;
 }
 
 .aboutus p{
@@ -266,7 +305,6 @@ iframe{
 
 /* footer part */
 footer{
-    background-color: #222;
     color: #c78c06;
     padding-top: 25px;
     padding-bottom: 15px;
@@ -274,4 +312,11 @@ footer{
 
 footer p{
     line-height: 2.5;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 760px){
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+    }
 }
