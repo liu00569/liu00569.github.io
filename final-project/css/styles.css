@@ -74,6 +74,7 @@ p{
     line-height: 1.3; 
 }
 
+/* This will only be only used in desktop version */
 .logodesk{
     display: none;
 }
@@ -83,6 +84,7 @@ p{
     padding-top: 15px;
 }
 
+/* all buttons except the first one */
 .button p{
     color: white;
     font-size: 1.5rem;
@@ -158,6 +160,7 @@ ul i{
     background-repeat: no-repeat;
 }
 
+/* the black box in the picture */
 .text-block{
     position: absolute;
     box-sizing: border-box;
@@ -336,12 +339,12 @@ footer p{
     }
     .stage{
     display: none;
-    /* the logo inside is also not display*/
+    /* the .logo inside is also not display*/
     }
 
     /* ul li{
         height: 30px;
-    } */
+    } This can make the search box the same line as other elements, but the icon will be in the middle of the heading and next part*/
 
     .heading{
         display: flex;
@@ -381,6 +384,7 @@ footer p{
 
    .boxes{
        display: grid;
+       /* devide this part a 6*2 area */
        grid-template-columns: repeat(6, 16%);
        grid-template-rows:  670px 670px;
        align-items: flex-start;
@@ -412,6 +416,7 @@ footer p{
     }
 
     .boxes4{
+        /* here is a 2*2 area */
         display: grid;
         grid-template-columns: 48% 48%;
         grid-template-rows: 350px 350px;
@@ -438,6 +443,7 @@ footer p{
     }
     
     .sendusbox{
+        /* here is a 2*3 area */
         display: grid;
         grid-template-columns: 48% 48%;
         grid-template-rows: 280px 280px 250px;
