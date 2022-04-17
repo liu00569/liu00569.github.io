@@ -81,6 +81,7 @@ p{
 
 .button p{
     color: white;
+    font-size: 1.5rem;
 }
 
 .button{
@@ -88,11 +89,11 @@ p{
     border: none;
     display: inline-block;
     margin: 15px 15px;
-    padding: 30px 30px;
+    padding: 30px 25px;
 }
 
 p i{
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .box{
@@ -247,13 +248,19 @@ hr{
     border: 1px solid #c78c06;
 }
 
-.ourteam .box{
+.ourteam .bob-text, .john-text{
     background-color: #ffe6ac;
     padding-bottom: 15px;
 }
 
 .ourteam h4{
     font-weight: bold;
+}
+
+.john-text, .bob-text{
+    margin-left: 15px;
+    width: 95%;
+    margin-bottom: 15px;
 }
 
 /* contact us part */
@@ -305,6 +312,7 @@ td{
 iframe{
     margin: 15px;
     width: 95%;
+    height: 400px;
 }
 
 /* footer part */
@@ -319,10 +327,85 @@ footer p{
 }
 
 @media screen and (min-width: 760px){
-   .stage{
-       display: none;
+    .flex-container{
+       display: flex; 
+       flex-direction: row;
+    }
+
+   .aboutus img{
+       float: left;
    }
-   .logo{
-       display: inline;
+
+   .boxes{
+       display: grid;
+       grid-template-columns: repeat(6, 16%);
+       grid-template-rows: 670px 670px;
+       align-items: flex-start;
    }
+   .boxes .box:nth-child(1){
+       grid-column: 1 / span 3;
+       grid-row: 1/ span 1;
+   }
+   .boxes .box:nth-child(2){
+    grid-column: 4 / span 3;
+    grid-row: 1/ span 1;
+    }
+
+    .boxes .box:nth-child(3){
+    grid-column: 1 / span 2;
+    grid-row: 2/ span ;
+    }
+    .boxes .box:nth-child(4){
+        grid-column: 3 / span 2;
+        grid-row: 2/ span 2;
+    }
+    .boxes .box:nth-child(5){
+        grid-column: 5 / span 2;
+        grid-row: 2/ span 2;
+    }
+
+    .boxes4{
+        display: grid;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 280px 280px;
+    }
+    .boxes4 .box:nth-child(1){
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+    }
+
+    .john-text{
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
+    }
+    .bob-text{
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+    .boxes4 .box:nth-child(2){
+        grid-column: 2 / span 1;
+        grid-row: 2/ span 1;
+    }
+    
+    .sendusbox{
+        display: grid;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 250px 250px 250px;
+    }
+
+    .sendum{
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 2;
+    }
+    .location{
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 2;
+    }
+
+.table{
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+}
+
+
 }
